@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,*:before,*:after {
+  box-sizing: inherit;
+}
+
+
+/* La balise body est le conteneur principal flexbox dont les enfants s'afficherint sur une colonne flex-direction*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/*
+Opérateur de sélection > permet de sélectionner l'enfant direct de balise qui précede le > (grand).
+La différence entre > et < c'est que plus grand permet de sélectionner l'enfant direct et (espace) permet de sélectionner l'enfant 
+
+Le > est plus spécifique que l'opérateur <. */
+
+
+/* C'est toujours le dernier élément de la suite qui est selectionné et c'est sur cet élément qu'on appliquela règle de style*/
+
+body > div {
+display: flex;
+justify-content: center;
+
+}
+#horaire h3{
+    position: relative; top: 50px;
+    right: 75px; 
+}
+
+#accueil h3{
+    position: relative; top: 50px;
+    right: 75px;
+}
+
+#inscription h3{
+    position: relative; top: 50px;
+    right: 110px;
+}
+
+#menu h3{
+    position: relative; top: 50px;
+    right: 75px; 
+}
+
+#tableau h3{
+    position: relative; top: 50px;
+    right: 75px;
+}
+
+#article h3{
+    position: relative; top: 50px;
+    right: 75px;
+}
+
+#galerie h3{
+    position: relative; top: 50px;
+    right: 75px;
+}
+
+#video h3{
+    position: relative; top: 50px;
+    right: 55px;
+}
+
+ h1 {
+   position: relative; left: 20px;
+ }
+
+
+#entete img{
+    width: 100px;
+
+    
+}
+
+
+
+body > div > section,
+body > div > footer,
+body > div > header {
+    display: flex;
+    flex: 0 1 1100px;
+    border: 1px solid #000000;
+    background-color: rgb(red, green, blue);
+}
+
+body > div > section{
+  padding-top: 100px;
+}
+
+body > div > header {
+    position: relative;
+}
+
+body > div > section {
+    min-height: 100vh;
+}
+
+/* Entete*/
+body > div:nth-of-type(1) {
+ background-color: rgb(255, 255, 255);
+ position: sticky;
+ top: 0;
+}
+
+body > div:nth-of-type(2) {
+background-color: rgb(255, 255, 255);
+}
+
+body > div:nth-of-type(3) {
+    background-color: rgb(255, 255, 255);
+}
+
+body > div:nth-of-type(4) {
+    background-color: rgb(255, 255, 255);
+}
+
+body > div:nth-of-type(5) {
+    background-color: rgb(255, 255, 255);
+}

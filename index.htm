@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/formulaire.css">
+</head>
+<body>
+    <div id="entete">
+    <header>
+ 
+     <img src="image/web-icon-logo-A6B586D114-seeklogo.com.png" alt="">
+    
+        <h1>TP2</h1>
+
+        <!--svgbox.net-->
+        <!--id peut etre utiliser une seule fois dans le document
+        La meme classe peut etre utiliser plusieurs fois-->
+        <input type="checkbox" id="chk_burger">
+        <label  id="burger" for="chk_burger">
+        <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu-alt-1&color=000" width="32" height="32">
+        <img src="https://s2.svgbox.net/hero-solid.svg?ic=x&color=000" width="32" height="32">
+        </label>
+       
+        <nav class="navigation">
+        <a href="#entete">Entête</a>
+        <a href="#menu">Menu</a>
+        <a href="#accueil">Accueil</a>
+        <a href="#inscription">Inscription</a>
+        <a href="#tableau">Tableau</a>
+        <a href="#articles">Articles</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#video">Vidéo</a>
+        <a href="#piedpage">Pied de page</a>
+    </nav>
+</header>
+</div>
+<div>
+        <section id="menu">
+         <h2><Menu></Menu></h2>
+        <h3>Le menu</h3>
+    </section>
+    </div>
+    <div>
+        <section id="accueil">
+        <h2>Accueil</h2>
+        <h3>Tous les services disponibles</h3>
+    </section>
+    </div>
+    <div id="inscription">
+        <section>
+        <h2>Inscription</h2>
+        <h3>Rentrez vos informations</h3>
+        
+            <form action="" class="formulaire">
+            <label class="form__nom" for=""> Nom<input type= "text"></label>
+            <label class="form__prenom" for=""> Nom<input type= "text"></label>
+            <fieldset>
+            <legend>langage</legend>
+            <label for="">HTML <input type="checkbox" id=""></label>
+            <label for="">CSS <input type="checkbox" id=""></label>
+            <label for="">JS <input type="checkbox" id=""></label>
+            <label for="">PHP <input type="checkbox" id=""></label>
+            <label for="">MySQL <input type="checkbox" id=""></label>
+            <label for="">Wordpress <input type="checkbox" id=""></label>
+        </fieldset>
+        <fieldset>
+            <!-- Pour les radio bouton on créé un groupe en utilisant
+                 la même valeur pour l'attribut name  -->
+            <legend>Age</legend>
+            <label for="rad__1">11-15</label>
+            <input type="radio" name="age" id="rad__1">
+            <label for="rad__2">16-20</label>
+            <input type="radio" name="age" id="rad__2">
+            <label for="rad__3">21-25</label>
+            <input type="radio" name="age" id="rad__3">
+        </fieldset>
+        </form>
+    </section>
+    </div>
+    <div>
+        <section id="tableau">
+        <h2>Tableau</h2>
+        <h3>Le tableau</h3>
+    </section>
+    </div>
+    <div>
+        <section id="article">
+        <h2>Articles</h2>
+        <h3>Les articles</h3>
+    </section>
+    </div>
+    <div>
+        <section id="galerie">
+        <h2>Galerie</h2>
+        <h3>Galerie</h3>
+    </section>
+    </div>
+    <div>
+        <section id="video">
+        <h2>Video</h2>
+        <h3>Video</h3>
+    </section>
+    </div>
+    
+    
+    <div id="pied de page">
+
+    <footer>
+        Pied de page
+    </footer>
+    </div>
+</body>
+</html>
